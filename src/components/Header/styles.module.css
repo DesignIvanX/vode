@@ -1,0 +1,143 @@
+.header-container {
+  background-image: url("../../../public/static/header_bg.png");
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #fff;
+}
+
+.left-content {
+  max-width: 500px;
+  padding: 30px;
+}
+.left-content h3 {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.left-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+.left-content span {
+  color: #21b6ff;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.product-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+.product-button:hover {
+  background-color: #0056b3;
+}
+/* Estilos del ícono de flecha */
+.flecha {
+  margin-left: 8px; /* Espacio entre el texto y el ícono */
+  font-size: 16px;
+  animation: pulse 0.5s infinite; /* Aplicar la animación de pulso en bucle al pasar el mouse */
+}
+.product-button:hover .flecha {
+  animation: none;
+}
+/* Animación de pop */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(
+      1.2
+    ); /* Escala el botón hacia arriba para el efecto de "pop" */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.product-button,
+.boton.video-button {
+  background-color: #21b6ff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos del ícono de video */
+.icono-video {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Estilos del botón de video */
+.boton.video-button {
+  background-color: #21b6ff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.boton.video-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos del ícono de video */
+.icono-video {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Escala ligeramente el botón hacia arriba */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Estilos de la izquierda */
+.right-content {
+}
+
+.right-content--img {
+  width: 300px;
+  object-fit: cover;
+}
+@media (max-width: 700px) {
+  .right-content {
+    display: none;
+  }
+}

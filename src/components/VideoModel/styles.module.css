@@ -1,0 +1,47 @@
+/* VideoModal.module.css */
+.video-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000000000;
+}
+
+.video-modal {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.close-button {
+  position: fixed;
+  top: 100px;
+  left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el video dentro del modal */
+video {
+  margin: 0 auto;
+  width: 95%;
+  height: 300px;
+  border-radius: 40px;
+  outline: none; /* Eliminar el contorno al hacer clic en el video */
+}
