@@ -12,7 +12,7 @@ function App() {
         <Canva>
           <Header />
           {/* <Collection /> */}
-          <Information />
+          {/* <Information /> */}
         </Canva>
       </header>
     </div>

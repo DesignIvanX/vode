@@ -1,5 +1,5 @@
 .header-container {
-  background-image: url("../../../public/static/header_bg.png");
+  background-image: url("../../static/header_bg.png");
   background-size: cover;
   object-fit: cover;
   background-position: center;

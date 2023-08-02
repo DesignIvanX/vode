@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.css";
-
+import Logo from "../../static/vode.jpg";
 const index = () => {
   const handleOnClickHamburger = () => {
     const hamburger = document.querySelector("#hamburger");
@@ -11,11 +11,7 @@ const index = () => {
   return (
     <nav className={styles["nav"]}>
       <div className={styles["nav-logo"]}>
-        <img
-          className={styles["nav-logo--img"]}
-          src="/static/Vode.jpg"
-          alt="vode"
-        />
+        <img className={styles["nav-logo--img"]} src={Logo} alt="vode" />
       </div>
 
       <ul className={styles["nav-ul"]} id="nav-ul">

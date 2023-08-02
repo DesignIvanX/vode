@@ -3,8 +3,10 @@ import styles from "./styles.module.css";
 import { BsPlayFill } from "react-icons/bs";
 import { FiArrowRight } from "react-icons/fi";
 import VideoModal from "../VideoModel/index";
+import Bottle from "../../static/portrait.png";
+import Video from "../../static/video.mp4";
 const Header = () => {
-  const videoUrl = "./video.mp4";
+  const videoUrl = Video;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -39,8 +41,8 @@ const Header = () => {
       <div className={styles["right-content"]}>
         <img
           className={styles["right-content--img"]}
-          src="static/portrait.png"
-          alt="Persona"
+          src={Bottle}
+          alt="botella vode"
         />
       </div>
       {isModalOpen && (
