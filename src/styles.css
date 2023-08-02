@@ -1,12 +1,15 @@
 /* Btn Primary */
 .btn-primary {
   color: var(--color-white);
-  background-color: var(--color-primary);
-  padding: 5px 25px;
-  border: var(--boder);
-  box-shadow: var(--box-shadow-primary);
+  background-color: #21b6ff;
+  border-radius: 5px;
   cursor: pointer;
   transition: 500ms all ease-out;
+  font-size: 16px;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #21b6ff;
 }
 .btn-primary:hover {
   color: var(--color-primary);
@@ -16,19 +19,20 @@
 .btn-transparent {
   color: var(--color-primary);
   background-color: transparent;
-  padding: 5px 25px;
-  border: var(--boder);
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 2px solid #21b6ff;
   cursor: pointer;
   transition: 500ms all ease-out;
 }
 .btn-transparent:hover {
   color: var(--color-white);
-  background-color: var(--color-primary);
+  background-color: #21b6ff;
 }
 /* Active */
 .color--active {
   font-weight: bold;
-  color: var(--color-secondary);
+  color: #21b6ff;
   margin: 15px 0 0 0;
 }
 .color--active:hover {
