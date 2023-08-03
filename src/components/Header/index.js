@@ -18,36 +18,45 @@ const Header = () => {
     setIsModalOpen(false);
   };
   return (
-    <header className={styles["header-container"]}>
-      <div className={styles["left-content"]}>
-        <h3>
-          WELCOME TO <span>VODE</span>
-        </h3>
-        <h1>
-          Highest Quality Water <span>Services</span> 24 Hours.
-        </h1>
-        <div className={styles["buttons"]}>
-          <a className={styles["product-button"]}>
-            Our Products <FiArrowRight className={styles["flecha"]} />
-          </a>
-          <a
-            className={`${styles["boton"]} ${styles["video-button"]}`}
-            onClick={handleVideoButtonClick}
-          >
-            <BsPlayFill className={styles["icono-video"]} />
-          </a>
+    <header className={styles["h"]}>
+      {/* Start Wave */}
+      <div className={styles["header"]}>
+        <div className={styles["bg-color"]}></div>
+        <div className={`${styles["wave"]} ${styles["w1"]}`}></div>
+        <div className={`${styles["wave"]} ${styles["w2"]}`}></div>
+        {/* End Wave */}
+        <div className={styles["header-container"]}>
+          <div className={styles["left-content"]}>
+            <h3>
+              WELCOME TO <span>VODE</span>
+            </h3>
+            <h1>
+              Highest Quality Water <span>Services</span> 24 Hours.
+            </h1>
+            <div className={styles["buttons"]}>
+              <a className={styles["product-button"]}>
+                Our Products <FiArrowRight className={styles["flecha"]} />
+              </a>
+              <a
+                className={`${styles["boton"]} ${styles["video-button"]}`}
+                onClick={handleVideoButtonClick}
+              >
+                <BsPlayFill className={styles["icono-video"]} />
+              </a>
+            </div>
+          </div>
+          <div className={styles["right-content"]}>
+            <img
+              className={styles["right-content--img"]}
+              src={Bottle}
+              alt="botella vode"
+            />
+          </div>
+          {isModalOpen && (
+            <VideoModal videoUrl={videoUrl} onClose={handleCloseModal} />
+          )}
         </div>
       </div>
-      <div className={styles["right-content"]}>
-        <img
-          className={styles["right-content--img"]}
-          src={Bottle}
-          alt="botella vode"
-        />
-      </div>
-      {isModalOpen && (
-        <VideoModal videoUrl={videoUrl} onClose={handleCloseModal} />
-      )}
     </header>
   );
 };

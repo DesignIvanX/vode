@@ -3,11 +3,10 @@
   width: 100%;
   min-height: 200px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: #f1f6fa;
 }
 
 .emoji-group {
