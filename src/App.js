@@ -11,8 +11,8 @@ function App() {
       <header>
         <Canva>
           <Header />
-          {/* <Collection /> */}
           <Information />
+          <Collection />
         </Canva>
       </header>
     </div>
