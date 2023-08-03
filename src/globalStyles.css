@@ -34,6 +34,7 @@ html,
 body {
   height: 100%;
   background-color: var(--white);
+  overflow-x: hidden;
 }
 /*
   Typographic tweaks!
