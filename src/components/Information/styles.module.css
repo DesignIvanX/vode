@@ -26,7 +26,7 @@
 .emoji-item {
   margin-bottom: 20px;
   margin: 10px 10px;
-  background-color: #0056b3;
+  background-color: #001e36;
   width: 250px;
   padding: 10px;
   border-radius: 5px;
@@ -47,6 +47,6 @@
 .info-text--h2 {
   font-size: 1.7rem;
   padding: 10px 25px;
-  color: #0056b3;
+  color: #001e36;
   text-transform: uppercase;
 }

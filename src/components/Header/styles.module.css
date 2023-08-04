@@ -60,11 +60,6 @@
 }
 /* wave */
 .header-container {
-  /* background-image: url("../../static/header_bg.png"); */
-  /* background-size: cover;
-  object-fit: cover; */
-  /* background-position: center; */
-  /* background-attachment: fixed; */
   height: 100vh;
   width: 100vw;
   display: flex;
