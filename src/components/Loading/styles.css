@@ -6,7 +6,7 @@
   margin: 0 auto;
   width: 100vw;
   height: 100vh;
-  background-color: #fff;
+  background-color: var(--color-primary);
   z-index: 100000000;
 }
 .loader {
@@ -24,7 +24,7 @@
   margin: 0 auto;
   width: 48px;
   height: 48px;
-  color: #000000;
+  color: #ffffff;
 }
 .lazy {
   display: none;
@@ -43,7 +43,7 @@
   animation: 1s spin linear infinite;
 }
 .loader:after {
-  color: #ff3d00;
+  color: #21b6ff;
   transform: rotateY(70deg);
   animation-delay: 0.4s;
 }

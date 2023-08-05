@@ -28,14 +28,15 @@ const Header = () => {
         <div className={styles["header-container"]}>
           <div className={styles["left-content"]}>
             <h3>
-              WELCOME TO <span>VODE</span>
+              BIENVENIDO A <span>VODE</span>
             </h3>
             <h1>
-              Highest Quality Water <span>Services</span> 24 Hours.
+              <span>Vode:</span> Protegiendo el Futuro, una <span>Gota</span> a
+              la Vez
             </h1>
             <div className={styles["buttons"]}>
               <a className={styles["product-button"]}>
-                Our Products <FiArrowRight className={styles["flecha"]} />
+                Productos <FiArrowRight className={styles["flecha"]} />
               </a>
               <a
                 className={`${styles["boton"]} ${styles["video-button"]}`}

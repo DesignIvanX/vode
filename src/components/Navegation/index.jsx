@@ -17,22 +17,22 @@ const index = () => {
       <ul className={styles["nav-ul"]} id="nav-ul">
         <li className={styles["nav-ul-li"]}>
           <a className={`${styles["nav-ul-li--a"]} color--active`} href="">
-            Home
+            Inicio
           </a>
         </li>
         <li className={styles["nav-ul-li"]}>
           <a className={styles["nav-ul-li--a"]} href="">
-            Services
+            Productos
           </a>
         </li>
         <li className={styles["nav-ul-li"]}>
           <a className={styles["nav-ul-li--a"]} href="">
-            About us
+            Nosotros
           </a>
         </li>
         <li className={styles["nav-ul-li"]}>
           <a className={styles["nav-ul-li--a"]} href="">
-            Contact us
+            Contacto
           </a>
         </li>
         <div className={styles["nav-btns"]}>

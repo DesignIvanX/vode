@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
-// import Collection from "./components/Collection/index";
 import Information from "./components/Information/index";
+import About from "./components/About/index";
 import Canva from "./components/Canva";
 import "./globalStyles.css";
 
@@ -12,7 +12,7 @@ function App() {
         <Canva>
           <Header />
           <Information />
-          {/* <Collection /> */}
+          <About />
         </Canva>
       </header>
     </div>
