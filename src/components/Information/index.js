@@ -8,10 +8,9 @@ import styles from "./styles.module.css";
 const InfoSection = () => {
   const [text] = useTypewriter({
     words: [
-      "A veces lo mas productivo que puedes hacer es relajarte.",
-      "Nuestra compañia se fundo en 2023.",
-      "Si hay magia en el planeta, esta contenida en el agua.",
-      "Vode, conecta con tu esencia.",
+      "donde la creatividad fluye sin límites.",
+      "la esencia de la protección, preservando tus creaciones para siempre.",
+      "protegiendo el futuro.",
       "100% pura y mineral.",
     ],
     loop: {},
@@ -20,6 +19,7 @@ const InfoSection = () => {
     <div className={styles["info-container"]}>
       <div className={styles["info-text"]}>
         <h2 className={styles["info-text--h2"]}>
+          <span> Vode, </span>
           {text} <Cursor />
         </h2>
       </div>

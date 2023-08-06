@@ -27,7 +27,7 @@
 .emoji-item {
   margin-bottom: 20px;
   margin: 10px 10px;
-  background-color: #001e36;
+  background-color: #21b6ff;
   width: 250px;
   padding: 10px;
   border-radius: 5px;
@@ -50,4 +50,8 @@
   padding: 10px 25px;
   color: #001e36;
   text-transform: uppercase;
+}
+
+.info-text--h2 span {
+  color: #21b6ff;
 }

@@ -31,7 +31,7 @@ const index = () => {
           </p>
           <div className={styles["button"]}>
             <a className={styles["product-button"]}>
-              Our Products <FiArrowRight className={styles["flecha"]} />
+              Productos <FiArrowRight className={styles["flecha"]} />
             </a>
           </div>
         </div>
