@@ -4,7 +4,7 @@ import styles from "./styles.module.css";
 import Bottle from "../../static/pixelcut4.jpeg";
 const index = () => {
   return (
-    <section className={styles["about"]}>
+    <section id="about" className={styles["about"]}>
       <div className={styles["about-container"]}>
         <div className={styles["about-container-box"]}>
           <img

@@ -16,20 +16,25 @@ const index = () => {
 
       <ul className={styles["nav-ul"]} id="nav-ul">
         <li className={styles["nav-ul-li"]}>
-          <a className={`${styles["nav-ul-li--a"]} color--active`} href="">
+          <a className={`${styles["nav-ul-li--a"]} color--active`} href="/">
             Inicio
           </a>
         </li>
         <li className={styles["nav-ul-li"]}>
-          <a className={styles["nav-ul-li--a"]} href="">
-            Nosotros
+          <a className={styles["nav-ul-li--a"]} href="/produts">
+            Productos
+          </a>
+        </li>
+        <li className={styles["nav-ul-li"]}>
+          <a className={styles["nav-ul-li--a"]} href="#featured">
+            Destacados
           </a>
         </li>
         <div className={styles["nav-btns"]}>
-          <a className="btn-primary" href="">
-            Productos
+          <a href="#about" className="btn-primary">
+            Nosotros
           </a>
-          <a className="btn-transparent" href="">
+          <a className="btn-transparent" href="#contact">
             Contacto
           </a>
         </div>

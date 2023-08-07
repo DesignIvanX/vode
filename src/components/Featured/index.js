@@ -5,9 +5,27 @@ import Img from "../../static/pixelcut.jpeg";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 const index = () => {
   const carouselRef = useRef(null);
+  const leftRef = useRef(null);
+  const rightRef = useRef(null);
+  const firstImg = useRef(null);
+
   let isDragStart = false,
     prevPageX,
     prevScrollLeft;
+
+  useEffect(() => {
+    const carouselElement = carouselRef.current;
+
+    carouselElement.addEventListener("mousedown", dragStart);
+    carouselElement.addEventListener("mousemove", handleDragging);
+    carouselElement.addEventListener("mouseup", dragStop);
+
+    return () => {
+      carouselElement.addEventListener("mousedown", dragStart);
+      carouselElement.removeEventListener("mousemove", handleDragging);
+      carouselElement.addEventListener("mouseup", dragStop);
+    };
+  }, []);
 
   const dragStart = (e) => {
     isDragStart = true;
@@ -25,139 +43,78 @@ const index = () => {
     isDragStart = false;
   };
 
-  const handleOnClick = () => {
-    console.log("hola");
+  const handleOnClickLeft = () => {
+    console.log("Hola Left!");
+    let firstImgWidth = firstImg.current.clientWidth + 16;
+    carouselRef.current.scrollLeft -= firstImgWidth;
   };
-  useEffect(() => {
-    const carouselElement = carouselRef.current;
+  const handleOnClickRigth = () => {
+    console.log("Hola Rigth!");
 
-    carouselElement.addEventListener("mousedown", dragStart);
-    carouselElement.addEventListener("mousemove", handleDragging);
-    carouselElement.addEventListener("mouseup", dragStop);
-
-    return () => {
-      carouselElement.addEventListener("mousedown", dragStart);
-      carouselElement.removeEventListener("mousemove", handleDragging);
-      carouselElement.addEventListener("mouseup", dragStop);
-    };
-  }, []);
+    let firstImgWidth = firstImg.current.clientWidth + 16;
+    console.log(firstImg.current.clientWidth);
+    carouselRef.current.scrollLeft += firstImgWidth;
+  };
 
   return (
-    <section className={styles["featured"]}>
-      <h2 className={styles["featured--h2"]}>PRODUCTOS DESTACADOS</h2>
+    <section id="featured" className={styles["featured"]}>
+      <h2 className={styles["featured--h2"]}>
+        PRODUCTOS <span>DESTACADOS</span>
+      </h2>
       <div className={styles["wrapper"]}>
         <AiOutlineArrowLeft
-          onClick={handleOnClick}
+          ref={leftRef}
+          onClick={handleOnClickLeft}
           className={`${styles["wrapper--arrow-left"]} ${styles["wrapper--arrow"]}`}
         />
-        <div
-          ref={carouselRef}
-          id="carousel"
-          className={styles["wrapper-carousel"]}
-        >
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Img}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Img}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Img}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Img}
-            alt="vode"
-          />
-          <img
-            className={styles["wrapper-carousel--img"]}
-            src={Vode}
-            alt="vode"
-          />
+        <div ref={carouselRef} className={styles["wrapper-carousel"]}>
+          <div className={styles["wrapper-carousel-container"]}>
+            <img
+              ref={firstImg}
+              className={styles["wrapper-carousel-container--img"]}
+              src={Img}
+              alt="vode"
+            />
+          </div>
+          <div className={styles["wrapper-carousel-container"]}>
+            <img
+              className={styles["wrapper-carousel-container--img"]}
+              src={Vode}
+              alt="vode"
+            />
+          </div>
+          <div className={styles["wrapper-carousel-container"]}>
+            <img
+              className={styles["wrapper-carousel-container--img"]}
+              src={Vode}
+              alt="vode"
+            />
+          </div>
+          <div className={styles["wrapper-carousel-container"]}>
+            <img
+              className={styles["wrapper-carousel-container--img"]}
+              src={Vode}
+              alt="vode"
+            />
+          </div>
+          <div className={styles["wrapper-carousel-container"]}>
+            <img
+              className={styles["wrapper-carousel-container--img"]}
+              src={Vode}
+              alt="vode"
+            />
+          </div>
+          <div className={styles["wrapper-carousel-container"]}>
+            <img
+              className={styles["wrapper-carousel-container--img"]}
+              src={Vode}
+              alt="vode"
+            />
+          </div>
         </div>
         <AiOutlineArrowRight
-          onClick={handleOnClick}
+          ref={rightRef}
+          onClick={handleOnClickRigth}
           className={`${styles["wrapper--arrow-right"]} ${styles["wrapper--arrow"]}`}
         />
       </div>

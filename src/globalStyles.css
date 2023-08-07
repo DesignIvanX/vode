@@ -35,6 +35,9 @@ body {
   height: 100%;
   background-color: #f1f6fa;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+ para probar la diferencia con y sin scroll suavizado*/
 }
 /*
   Typographic tweaks!

@@ -17,7 +17,7 @@
 }
 /* Btn Transparent */
 .btn-transparent {
-  color: var(--color-primary);
+  color: var(--color-white);
   background-color: transparent;
   padding: 5px 20px;
   border-radius: 5px;
