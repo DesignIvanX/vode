@@ -115,20 +115,6 @@
 .product-button:hover .flecha {
   animation: none;
 }
-/* Animación de pop */
-@keyframes pop {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(
-      1.2
-    ); /* Escala el botón hacia arriba para el efecto de "pop" */
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 .product-button,
 .boton.video-button {
   background-color: #21b6ff;

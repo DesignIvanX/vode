@@ -1,5 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./styles.module.css";
+import img1 from "../../static/Logo.jpg";
+import img2 from "../../static/portrait.png";
+import img3 from "../../static/pixelcut4.jpeg";
+import img4 from "../../static/pixelcut3.jpeg";
 import Img from "../../static/pixelcut.jpeg";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
@@ -75,7 +79,7 @@ const Featured = () => {
             <img
               ref={firstImg}
               className={styles["wrapper-carousel-container--img"]}
-              src={Img}
+              src={img1}
               alt="vode"
             />
           </div>
@@ -83,7 +87,7 @@ const Featured = () => {
             <img
               ref={firstImg}
               className={styles["wrapper-carousel-container--img"]}
-              src={Img}
+              src={img2}
               alt="vode"
             />
           </div>
@@ -91,7 +95,14 @@ const Featured = () => {
             <img
               ref={firstImg}
               className={styles["wrapper-carousel-container--img"]}
-              src={Img}
+              src={img3}
+              alt="vode"
+            />
+          </div>
+          <img
+              ref={firstImg}
+              className={styles["wrapper-carousel-container--img"]}
+              src={img4}
               alt="vode"
             />
           </div>

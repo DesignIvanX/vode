@@ -52,10 +52,11 @@
     top: 0;
     right: 0;
     width: 100vw;
-    padding: 50px 70px;
+
     background-color: var(--color-primary);
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     transform: translateX(100%);
     transition: 1s all ease-in-out;

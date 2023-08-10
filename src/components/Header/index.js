@@ -35,7 +35,7 @@ const Header = () => {
               la Vez
             </h1>
             <div className={styles["buttons"]}>
-              <a className={styles["product-button"]}>
+              <a href="/products" className={styles["product-button"]}>
                 Productos <FiArrowRight className={styles["flecha"]} />
               </a>
               <a
