@@ -1,17 +1,22 @@
-import { Logo } from "./Logo";
-import { WhatsAppWidget } from "react-whatsapp-widget";
-import "react-whatsapp-widget/dist/index.css";
-
-const WhatsApp = ({ number }) => {
+import React from "react";
+import Logo from "../../static/Logo.jpg";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+const WhatsApp = ({
+  phoneNumber,
+  chatMessage,
+  placeholder,
+  accountName,
+  statusMessage,
+}) => {
   return (
-    <WhatsAppWidget
-      CompanyIcon={Logo}
-      phoneNumber={number}
-      companyName="Vode"
-      message="Hola! 👋🏼 Queremos cuidar tu salud!"
-      replyTimeText="Empresa de agua embotellada"
-      inputPlaceHolder="Escribenos un mensage"
-      sendButtonText="Enviar"
+    <FloatingWhatsApp
+      phoneNumber={phoneNumber}
+      chatMessage={chatMessage}
+      placeholder={placeholder}
+      accountName={accountName}
+      avatar={Logo}
+      statusMessage={statusMessage}
+      // allowEsc={true}
     />
   );
 };

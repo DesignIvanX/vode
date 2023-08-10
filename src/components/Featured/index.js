@@ -16,12 +16,12 @@ const Featured = () => {
   let prevScrollLeft = 0;
 
   const handleOnClickRight = () => {
-    let firstImgWidth = firstImg.current.clientWidth + 292;
+    let firstImgWidth = firstImg.current.clientWidth + 280;
     carouselRef.current.scrollLeft += firstImgWidth;
   };
 
   const handleOnClickLeft = () => {
-    let firstImgWidth = firstImg.current.clientWidth + 292;
+    let firstImgWidth = firstImg.current.clientWidth + 280;
     carouselRef.current.scrollLeft -= firstImgWidth;
   };
 
@@ -49,10 +49,18 @@ const Featured = () => {
     carouselElement.addEventListener("mousemove", handleDragging);
     carouselElement.addEventListener("mouseup", dragStop);
 
+    carouselElement.addEventListener("touchdown", dragStart);
+    carouselElement.addEventListener("touchmove", handleDragging);
+    carouselElement.addEventListener("touchup", dragStop);
+
     return () => {
       carouselElement.removeEventListener("mousedown", dragStart);
       carouselElement.removeEventListener("mousemove", handleDragging);
       carouselElement.removeEventListener("mouseup", dragStop);
+
+      carouselElement.removeEventListener("touchdown", dragStart);
+      carouselElement.removeEventListener("touchmove", handleDragging);
+      carouselElement.removeEventListener("touchup", dragStop);
     };
   }, []);
 
@@ -80,14 +88,6 @@ const Featured = () => {
               ref={firstImg}
               className={styles["wrapper-carousel-container--img"]}
               src={img1}
-              alt="vode"
-            />
-          </div>
-          <div className={styles["wrapper-carousel-container"]}>
-            <img
-              ref={firstImg}
-              className={styles["wrapper-carousel-container--img"]}
-              src={img2}
               alt="vode"
             />
           </div>
