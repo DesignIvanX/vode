@@ -99,7 +99,8 @@ const Featured = () => {
               alt="vode"
             />
           </div>
-          <img
+          <div>
+            <img
               ref={firstImg}
               className={styles["wrapper-carousel-container--img"]}
               src={img4}
