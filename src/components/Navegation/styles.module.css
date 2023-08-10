@@ -11,7 +11,8 @@
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-  background-color: var(--color-primary);
+  backdrop-filter: blur(5px);
+  background-color: #001e36aa;
 }
 .nav-logo {
   display: flex;

@@ -29,16 +29,27 @@ const Featured = () => {
     const carouselElement = carouselRef.current;
 
     const dragStart = (e) => {
-      isDragStart = true;
-      prevPageX = e.pageX;
-      prevScrollLeft = carouselElement.scrollLeft;
+      if (e.pageX) {
+        isDragStart = true;
+        prevPageX = e.pageX;
+        prevScrollLeft = carouselElement.scrollLeft;
+      } else {
+        isDragStart = true;
+        prevPageX = e.touches[0].clientX;
+        prevScrollLeft = carouselElement.scrollLeft;
+      }
     };
 
     const handleDragging = (e) => {
-      if (!isDragStart) return;
-      e.preventDefault();
-      let positionDiff = e.pageX - prevPageX;
-      carouselElement.scrollLeft = prevScrollLeft - positionDiff;
+      if (e.pageX) {
+        if (!isDragStart) return;
+        e.preventDefault();
+        let positionDiff = e.pageX - prevPageX;
+        carouselElement.scrollLeft = prevScrollLeft - positionDiff;
+      } else {
+        let positionDiff = e.touches[0].clientX;
+        carouselElement.scrollLeft = positionDiff;
+      }
     };
 
     const dragStop = (e) => {
