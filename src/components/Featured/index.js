@@ -16,12 +16,12 @@ const Featured = () => {
   let prevScrollLeft = 0;
 
   const handleOnClickRight = () => {
-    let firstImgWidth = firstImg.current.clientWidth + 320;
+    let firstImgWidth = firstImg.current.clientWidth + 292;
     carouselRef.current.scrollLeft += firstImgWidth;
   };
 
   const handleOnClickLeft = () => {
-    let firstImgWidth = firstImg.current.clientWidth + 320;
+    let firstImgWidth = firstImg.current.clientWidth + 292;
     carouselRef.current.scrollLeft -= firstImgWidth;
   };
 
