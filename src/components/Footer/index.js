@@ -2,7 +2,7 @@ import React from "react";
 import Logo from "../../static/vode.jpg";
 import styles from "./styles.module.css";
 
-const index = () => {
+const Footer = () => {
   return (
     <footer className={styles["footer"]}>
       <div className={styles["footer-content"]}>
@@ -44,13 +44,13 @@ const index = () => {
       </div>
       <div className={styles["foot"]}>
         <div className={styles["foot-text"]}>
-          <a className={styles["foot-text--a"]} href="#">
+          <a className={styles["foot-text--a"]} href="/">
             Terms & Conditions
           </a>
-          <a className={styles["foot-text--a"]} href="#">
+          <a className={styles["foot-text--a"]} href="/">
             Privacity Policy
           </a>
-          <a className={styles["foot-text--a"]} href="#">
+          <a className={styles["foot-text--a"]} href="/">
             Sitemap
           </a>
         </div>
@@ -65,4 +65,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Footer;
