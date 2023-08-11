@@ -47,8 +47,8 @@ const Featured = () => {
         let positionDiff = e.pageX - prevPageX;
         carouselElement.scrollLeft = prevScrollLeft - positionDiff;
       } else {
-        let positionDiff = e.touches[0].clientX;
-        carouselElement.scrollLeft = positionDiff;
+        let positionDiff = e.touches[0].clientX - prevPageX;
+        carouselElement.scrollLeft = prevScrollLeft - positionDiff;
       }
     };
 
