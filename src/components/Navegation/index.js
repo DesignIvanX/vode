@@ -8,6 +8,12 @@ const index = () => {
     hamburger.classList.toggle("toggleBurger");
     nav.classList.toggle("toggleNav");
   };
+  const handleOnClickLink = () => {
+    const hamburger = document.querySelector("#hamburger");
+    const nav = document.querySelector("#nav-ul");
+    hamburger.classList.toggle("toggleBurger");
+    nav.classList.toggle("toggleNav");
+  };
   return (
     <nav className={styles["nav"]}>
       <div className={styles["nav-logo"]}>
@@ -26,15 +32,23 @@ const index = () => {
           </a>
         </li>
         <li className={styles["nav-ul-li"]}>
-          <a className={styles["nav-ul-li--a"]} href="#featured">
+          <a
+            onClick={handleOnClickLink}
+            className={styles["nav-ul-li--a"]}
+            href="#featured"
+          >
             Destacados
           </a>
         </li>
         <div className={styles["nav-btns"]}>
-          <a href="#about" className="btn-primary">
+          <a onClick={handleOnClickLink} href="#about" className="btn-primary">
             Nosotros
           </a>
-          <a className="btn-transparent" href="#contact">
+          <a
+            onClick={handleOnClickLink}
+            className="btn-transparent"
+            href="#contact"
+          >
             Contacto
           </a>
         </div>

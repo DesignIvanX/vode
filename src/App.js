@@ -4,6 +4,7 @@ import Information from "./components/Information/index";
 import About from "./components/About/index";
 import Featured from "./components/Featured/index";
 import Canva from "./components/Canva";
+import Contact from "./components/Contact";
 import "./globalStyles.css";
 
 function App() {
@@ -13,8 +14,9 @@ function App() {
         <Canva>
           <Header />
           <Information />
-          <About />
           <Featured />
+          <About />
+          <Contact />
         </Canva>
       </header>
     </div>

@@ -184,3 +184,8 @@
     display: none;
   }
 }
+@media screen and (max-heigth: 840px) {
+  .wave {
+    top: 85px;
+  }
+}
