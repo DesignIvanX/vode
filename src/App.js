@@ -1,24 +1,15 @@
 import React from "react";
-import Header from "./components/Header";
-import Information from "./components/Information/index";
-import About from "./components/About/index";
-import Featured from "./components/Featured/index";
 import Canva from "./components/Canva";
-import Contact from "./components/Contact";
-import "./globalStyles.css";
-
+import Routers from "./router/Routers";
+import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
-    <div className="home">
-      <header>
+    <div className="App">
+      <BrowserRouter>
         <Canva>
-          <Header />
-          <Information />
-          <Featured />
-          <About />
-          <Contact />
+          <Routers />
         </Canva>
-      </header>
+      </BrowserRouter>
     </div>
   );
 }

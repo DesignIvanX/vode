@@ -12,7 +12,7 @@
   border: 2px solid #21b6ff;
 }
 .btn-primary:hover {
-  color: var(--color-primary);
+  color: var(--color-white);
   background-color: transparent;
 }
 /* Btn Transparent */
@@ -36,7 +36,6 @@
   margin: 15px 0 0 0;
 }
 .color--active:hover {
-  text-decoration: 1.5px underline var(--color-primary);
 }
 /* hamburger */
 .line1,

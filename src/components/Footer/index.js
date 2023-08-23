@@ -55,10 +55,7 @@ const Footer = () => {
           </a>
         </div>
         <div className={styles["foot-copyright"]}>
-          <p className={styles["foot-copyright--p"]}>
-            © Copyright 2023 vode <br />
-            Website by NippyWit
-          </p>
+          <p className={styles["foot-copyright--p"]}>© Copyright 2023 vode</p>
         </div>
       </div>
     </footer>

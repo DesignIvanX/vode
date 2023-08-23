@@ -30,7 +30,7 @@ const index = () => {
             armonía.
           </p>
           <div className={styles["button"]}>
-            <a className={styles["product-button"]}>
+            <a href="/products" className={styles["product-button"]}>
               Productos <FiArrowRight className={styles["flecha"]} />
             </a>
           </div>

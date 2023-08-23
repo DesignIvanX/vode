@@ -10,26 +10,21 @@ const Contact = () => {
         <div className={styles["contact-content-contact"]}>
           <h2 className={styles["contact-content-contact--h2"]}>CONTACTANOS</h2>
           <p className={styles["contact-content-contact--p"]}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Las Palomas 151 c/ Arroyo Fortin, Villa Elisa
           </p>
-          <div>
-            <a href="https://www.xn--diseowebmurcia1-1qb.es/crear-pagina-contacto-de-web/">
+          <p className={styles["contact-content-contact--p"]}>
+            Horarios de atencion: 07:00hs a 17:00hs
+          </p>
+          <div className={styles["contact-content-contact-icon"]}>
+            <a
+              className={styles["contact-content-contact-icon--a"]}
+              href="https://www.xn--diseowebmurcia1-1qb.es/crear-pagina-contacto-de-web/"
+            >
               <AiFillInstagram />
             </a>
-            <a href="">
+            <a className={styles["contact-content-contact-icon--a"]} href="/">
               <AiOutlineWhatsApp />
             </a>
-          </div>
-        </div>
-        <div className={styles["contact-content-information"]}>
-          <h2 className={styles["contact-content-box--h2"]}>INFORMACION</h2>
-          <div>
-            <FaLocationDot />
-            <p>Las Palomas 151 c/ Arroyo Fortin, Villa Elisa</p>
-          </div>
-          <div>
-            <FaClock />
-            <p>Horarios de atencion: 07:00hs a 17:00hs</p>
           </div>
         </div>
       </div>
