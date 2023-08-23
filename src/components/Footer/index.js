@@ -13,33 +13,25 @@ const Footer = () => {
             alt="vode"
           />
           <p className={styles["footer-content-box--p"]}>
-            Lorem VR, 423-324 W Hastingds SE Vancouver, BC Canada
+            Las Palomas 151 c/ Arroyo Fortin, Villa Elisa
           </p>
           <p className={styles["footer-content-box--p"]}>vode@gmail.com</p>
         </div>
         <div className={styles["footer-content-box"]}>
           <h3 className={styles["footer-content-box--h3"]}>VODE</h3>
-          <p className={styles["footer-content-box--p"]}> Home</p>
-          <p className={styles["footer-content-box--p"]}>About</p>
-          <p className={styles["footer-content-box--p"]}>Products</p>
-          <p className={styles["footer-content-box--p"]}>Contact</p>
+          <p className={styles["footer-content-box--p"]}> Inicio</p>
+          <p className={styles["footer-content-box--p"]}>Nosotros</p>
+          <p className={styles["footer-content-box--p"]}>Productos</p>
+          <p className={styles["footer-content-box--p"]}>Contacto</p>
         </div>
         <div className={styles["footer-content-box"]}>
           <h3 className={styles["footer-content-box--h3"]}>SERVICES</h3>
-          <p className={styles["footer-content-box--p"]}>Solutions</p>
-          <p className={styles["footer-content-box--p"]}>Water</p>
-          <p className={styles["footer-content-box--p"]}>Bottle</p>
+          <p className={styles["footer-content-box--p"]}>Agua</p>
+          <p className={styles["footer-content-box--p"]}>Recarga</p>
         </div>
         <div className={styles["footer-content-box"]}>
-          <h3 className={styles["footer-content-box--h3"]}>EVENTS</h3>
-          <p className={styles["footer-content-box--p"]}>CRV</p>
-          <p className={styles["footer-content-box--p"]}>Game Jams</p>
-        </div>
-        <div className={styles["footer-content-box"]}>
-          <h3 className={styles["footer-content-box--h3"]}>FOLLOW</h3>
+          <h3 className={styles["footer-content-box--h3"]}>REDES</h3>
           <p className={styles["footer-content-box--p"]}>Instagram</p>
-          <p className={styles["footer-content-box--p"]}>Twitter</p>
-          <p className={styles["footer-content-box--p"]}>Facebook</p>
         </div>
       </div>
       <div className={styles["foot"]}>
@@ -50,8 +42,11 @@ const Footer = () => {
           <a className={styles["foot-text--a"]} href="/">
             Privacity Policy
           </a>
-          <a className={styles["foot-text--a"]} href="/">
-            Sitemap
+          <a
+            className={styles["foot-text--a"]}
+            href="https://www.google.com/maps/place/25%C2%B021'49.3%22S+57%C2%B035'36.1%22W/@-25.3636951,-57.595932,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-25.3636951!4d-57.5933571?hl=es&entry=ttu"
+          >
+            Ubicacion
           </a>
         </div>
         <div className={styles["foot-copyright"]}>

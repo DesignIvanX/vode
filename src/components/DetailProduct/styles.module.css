@@ -1,0 +1,30 @@
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 100px 0px 100px 00px;
+  width: 100%;
+}
+.product-img {
+}
+.product-img--img {
+  max-width: 300px;
+  max-height: 300px;
+  padding: 10px;
+}
+.product-text {
+  padding: 10px;
+}
+.product-text--h1 {
+  font-size: 1.8rem;
+}
+.product-text--h3 {
+  font-size: 1rem;
+  padding: 5px 0px 30px 0px;
+}
+.product-text--ul {
+}
+.product-text--li {
+  font-size: 0.9rem;
+}

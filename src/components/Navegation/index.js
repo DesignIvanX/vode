@@ -27,7 +27,7 @@ const index = () => {
           </a>
         </li>
         <li className={styles["nav-ul-li"]}>
-          <a className={styles["nav-ul-li--a"]} href="/produts">
+          <a className={styles["nav-ul-li--a"]} href="/products">
             Productos
           </a>
         </li>
