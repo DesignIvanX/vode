@@ -39,7 +39,6 @@ const Header = () => {
                 Productos <FiArrowRight className={styles["flecha"]} />
               </a>
               <a
-                href="/"
                 className={`${styles["boton"]} ${styles["video-button"]}`}
                 onClick={handleVideoButtonClick}
               >
