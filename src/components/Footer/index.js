@@ -36,12 +36,6 @@ const Footer = () => {
       </div>
       <div className={styles["foot"]}>
         <div className={styles["foot-text"]}>
-          <a className={styles["foot-text--a"]} href="/">
-            Terms & Conditions
-          </a>
-          <a className={styles["foot-text--a"]} href="/">
-            Privacity Policy
-          </a>
           <a
             className={styles["foot-text--a"]}
             href="https://www.google.com/maps/place/25%C2%B021'49.3%22S+57%C2%B035'36.1%22W/@-25.3636951,-57.595932,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-25.3636951!4d-57.5933571?hl=es&entry=ttu"
