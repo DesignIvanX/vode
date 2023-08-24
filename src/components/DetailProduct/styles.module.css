@@ -1,5 +1,5 @@
 .product {
-  width: 1000px;
+  max-width: 1000px;
   margin: 150px auto;
 }
 .product-content {
