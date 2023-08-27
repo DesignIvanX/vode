@@ -11,7 +11,7 @@
   background-position: top;
   object-position: top;
   object-fit: cover; */
-  height: 40vh;
+  /* height: 40vh; */
   color: var(--color-white);
   background-color: var(--color-primary);
 }
