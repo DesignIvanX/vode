@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   border: 2px solid #21b6ff;
+  max-width: 175px;
 }
 .btn-primary:hover {
   color: var(--color-white);

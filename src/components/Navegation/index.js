@@ -35,19 +35,19 @@ const index = () => {
           <a
             onClick={handleOnClickLink}
             className={styles["nav-ul-li--a"]}
-            href="#featured"
+            href="/#featured"
           >
             Destacados
           </a>
         </li>
         <div className={styles["nav-btns"]}>
-          <a onClick={handleOnClickLink} href="#about" className="btn-primary">
+          <a onClick={handleOnClickLink} href="/#about" className="btn-primary">
             Nosotros
           </a>
           <a
             onClick={handleOnClickLink}
             className="btn-transparent"
-            href="#contact"
+            href="/#contact"
           >
             Contacto
           </a>

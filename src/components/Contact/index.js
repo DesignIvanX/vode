@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillInstagram, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import styles from "./styles.module.css";
 
 const Contact = () => {
@@ -16,7 +16,7 @@ const Contact = () => {
           </p>
           <div className={styles["contact-content-contact-icon"]}>
             <a className="btn-primary" href="/">
-              Contacto
+              REALIZAR PEDIDO
             </a>
             <a
               className={styles["contact-content-contact-icon--a"]}

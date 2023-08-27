@@ -1,7 +1,6 @@
 /* Information.css */
 .info-container {
   width: 100%;
-  min-height: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;

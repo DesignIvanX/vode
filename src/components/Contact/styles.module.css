@@ -3,14 +3,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-primary);
+  /* background-color: var(--color-primary);
   background-image: url(../../static/contact.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-position: top;
+  object-position: top;
+  object-fit: cover; */
   height: 40vh;
   color: var(--color-white);
+  background-color: var(--color-primary);
 }
 .contact-content {
   padding: 10px;
@@ -26,18 +29,15 @@
 .contact-content-contact--p {
 }
 .contact-content-contact-icon {
-}
-.contact-content-contact-icon {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   margin: 10px 0px;
 }
 .contact-content-contact-icon--a {
   font-size: 2.5rem;
   color: #fff;
   transition: 1s all;
-  margin: 0px 20px;
 }
 .contact-content-contact-icon--a:hover {
-  color: var(--color-secondary);
+  color: #21b6ff;
 }
