@@ -17,7 +17,7 @@ const Contact = () => {
             <p className={styles["contact-content-contact--p"]}>
               Horarios de atencion: 07:00hs a 17:00hs
             </p>
-            <a className="btn-primary" href="/">
+            <a className="btn-primary" href="https://wa.me/+595 971 929830">
               REALIZAR PEDIDO
             </a>
           </div>
@@ -25,7 +25,7 @@ const Contact = () => {
           <div className={styles["contact-content-contact-icon"]}>
             <a
               className={styles["contact-content-contact-icon--a"]}
-              href="https://wa.me/+595 971 929830"
+              href="https://instagram.com/vode_py?igshid=MzRlODBiNWFlZA=="
             >
               <AiFillInstagram />
             </a>

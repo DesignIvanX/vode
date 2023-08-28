@@ -4,7 +4,7 @@ const Loading = () => {
   setTimeout(() => {
     const loading = document.querySelector("#loader-box");
     loading.classList.add("lazy");
-  }, 3000);
+  }, 1500);
 
   return (
     <div id="loader-box">

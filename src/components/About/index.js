@@ -1,7 +1,7 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import styles from "./styles.module.css";
-import Bottle from "../../static/pixelcut4.jpeg";
+import Bottle from "../../static/flayer.webp";
 const index = () => {
   return (
     <section id="about" className={styles["about"]}>

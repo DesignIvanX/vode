@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./styles.module.css";
-import Img from "../../static/pixelcut.jpeg";
-import img1 from "../../static/bidon.jpeg";
-import img2 from "../../static/pixelcut3.jpeg";
+import Img from "../../static/botella_1.webp";
+import img1 from "../../static/bidonjpg.webp";
+import img2 from "../../static/botella_2.webp";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const Featured = () => {
