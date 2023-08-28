@@ -1,9 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./styles.module.css";
-import img1 from "../../static/Logo.jpg";
-import img3 from "../../static/pixelcut4.jpeg";
-import img4 from "../../static/pixelcut3.jpeg";
 import Img from "../../static/pixelcut.jpeg";
+import img1 from "../../static/bidon.jpeg";
+import img2 from "../../static/pixelcut3.jpeg";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 
 const Featured = () => {
@@ -15,12 +14,13 @@ const Featured = () => {
   let prevScrollLeft = 0;
 
   const handleOnClickRight = () => {
-    let firstImgWidth = firstImg.current.clientWidth + 280;
+    let firstImgWidth = firstImg.current.clientWidth + 30;
     carouselRef.current.scrollLeft += firstImgWidth;
+    console.log(firstImg.current.clientWidth);
   };
 
   const handleOnClickLeft = () => {
-    let firstImgWidth = firstImg.current.clientWidth + 280;
+    let firstImgWidth = firstImg.current.clientWidth + 15;
     carouselRef.current.scrollLeft -= firstImgWidth;
   };
 
@@ -105,15 +105,7 @@ const Featured = () => {
             <img
               ref={firstImg}
               className={styles["wrapper-carousel-container--img"]}
-              src={img3}
-              alt="vode"
-            />
-          </div>
-          <div>
-            <img
-              ref={firstImg}
-              className={styles["wrapper-carousel-container--img"]}
-              src={img4}
+              src={img2}
               alt="vode"
             />
           </div>

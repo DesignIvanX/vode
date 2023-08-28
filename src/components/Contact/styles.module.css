@@ -3,41 +3,43 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: var(--color-primary);
-  background-image: url(../../static/contact.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: top;
-  object-position: top;
-  object-fit: cover; */
-  /* height: 40vh; */
-  color: var(--color-white);
-  background-color: var(--color-primary);
+  color: var(--color-primary);
+  padding: 50px 10px;
 }
 .contact-content {
+  width: 100%;
   padding: 10px;
 }
 .contact-content-contact {
-  width: 100%;
+  max-width: 1000px;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }
 .contact-content-contact--h2 {
   font-size: 2rem;
   font-weight: bold;
 }
+
 .contact-content-contact--p {
+  padding: 5px 0px;
 }
+
 .contact-content-contact-icon {
   display: flex;
   flex-direction: column;
-  margin: 10px 0px;
+}
+.contact-content-contact-box {
 }
 .contact-content-contact-icon--a {
   font-size: 2.5rem;
-  color: #fff;
+  color: #21b6ff;
   transition: 1s all;
 }
 .contact-content-contact-icon--a:hover {
-  color: #21b6ff;
+  color: var(--color-primary);
 }
