@@ -31,8 +31,9 @@ const Header = () => {
               BIENVENIDO A <span>VODE</span>
             </h3>
             <h1>
-              <span>Vode:</span> Protegiendo el Futuro, una <span>Gota</span> a
-              la Vez
+              Vode:
+              <span>Vode:</span> Revitalizando tu <span>esencia</span> con cada
+              gota.
             </h1>
             <div className={styles["buttons"]}>
               <a href="/products" className={styles["product-button"]}>

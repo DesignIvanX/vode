@@ -21,13 +21,11 @@ const index = () => {
             "Trazando Nuestro Camino: Vode, el Resguardo de la Esencia Natural"
           </h2>
           <p className={styles["about-container-text--p"]}>
-            En el corazón de la naturaleza, encontramos la inspiración para
-            Vode, nuestra marca de agua. Como amantes del medio ambiente,
-            buscamos proteger y preservar la pureza de imágenes y documentos.
-            Vode no es solo una marca de agua, es una promesa de conservación y
-            solidaridad global. Únete a nosotros para trazar un camino hacia un
-            futuro sostenible donde el arte y la naturaleza coexistan en
-            armonía.
+            Vode no es solo una marca de agua, es una promesa de una experiencia
+            de revitalización y frescura profundas. Creemos en un mundo mejor y
+            eso comienza con una mejor versión de ti. Vode contribuye con tu
+            salud mental y física para que tu sumes a un mejor mañana para
+            todos.
           </p>
           <div className={styles["button"]}>
             <a href="/products" className={styles["product-button"]}>
